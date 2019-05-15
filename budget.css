@@ -1,0 +1,55 @@
+.Budget {
+   text-align: center;
+   box-sizing: border-box;
+   background: #2b7cda;
+   border-radius: 15px;
+   
+   padding: 30px;
+   margin: 30px;
+}
+
+.main 
+{
+    margin: 30px;
+}
+
+.form-control 
+{
+    border-color: brown;
+}
+
+#submit 
+{
+    top:50px;
+    
+}
+
+
+.first p 
+{
+    text-align: center;
+    font-size: px;
+}
+
+
+.second p 
+{
+    text-align: center
+}
+
+.resualt p 
+{
+    text-align: center;
+}
+
+.rounded 
+{
+   position: sticky;
+}
+
+#resualt {
+    border-color:brown;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #fffcfc;
+    background-color: white;
+  
+}

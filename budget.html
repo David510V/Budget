@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="budget.css" >
+</head>
+<body>
+    
+<div class='row'>
+
+     <div class="col-md-12">
+            <div class="Budget" >
+   <h2>Budget Script</h2> 
+
+             </div>
+      </div>
+</div>
+             <div class="main" >
+
+
+             
+                    <div class="row">
+
+                        <div class="col" >
+                         <div class="first"  >
+                                <p>סכום כולל
+                            <div class="text-center"><img src="dollarN.jpg" width=48px; height=48px; class="rounded" > </div> </p>  
+                                <input type="textarea" id="first" class="form-control" >
+                          </div>
+                        </div>
+
+
+
+                        <div class="col" >
+                          <div class='second' > 
+                               <p>הוצאות 
+                               <div class="text-center"><img src="credit.jpg" width=48px; height=48px; class="rounded" > </div></p>
+                                <input type="textarea" id="second" class="form-control">
+                                <input type="submit" onclick="calc()" id="submit" class="col-md-12" value="חשב">
+                           </div>
+                        </div>
+
+
+
+
+                        <div class="col">
+                           <div class="resualt"  >
+                               <p>יתרה
+                               <div class="text-center"><img src="money.jpg" width=48px; height=48px; class="rounded" > </div></p>
+                               <input type="textarea" readonly id="resualt" class="form-control ">
+                                
+                           </div>
+                        </div>
+                        
+                        
+                          
+
+
+
+                          
+                    </div>  
+
+    
+              </div>
+
+</div>
+
+
+
+<script src="budget.js"></script>
+
+</body>
+</html>
