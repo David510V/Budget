@@ -1,0 +1,29 @@
+let firstext = document.getElementById("first").value;
+let secondtext=document.getElementById("second").value;
+let resualtext=document.getElementById("resualt").value;
+let options=document.getElementById("options").value;
+let submit =document.getElementById("submit").value;
+
+function calc()
+{
+   let firstext = parseFloat(document.getElementById("first").value);
+   let secondtext=parseFloat(document.getElementById("second").value);
+   
+  
+   let resualtext=document.getElementById("resualt").value=firstext-secondtext;
+
+
+   if (resualtext< 500) 
+   {
+      Swal.fire('היי !  ', 'אתה מבזבז יותר מדי כספים ! ', 'error')
+   }
+   
+
+   if ( resualtext > 500)
+   {
+      Swal.fire('סחטיין !', 'מצב הכספי שלך מעולה !' , 'success');
+   }
+   
+   
+
+}

@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Budget</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/budgetstylee.css">
+    <link rel="stylesheet" href="https://fonts.googleleapis.com/css?family=Titillium+Web">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
 
     <link rel="stylesheet" href="budget.css" >
 </head>
-<body>
+<body >
     
 <div class='row'>
 
@@ -45,7 +49,27 @@
                                <p>הוצאות 
                                <div class="text-center"><img src="credit.jpg" width=48px; height=48px; class="rounded" > </div></p>
                                 <input type="textarea" id="second" class="form-control">
-                                <input type="submit" onclick="calc()" id="submit" class="col-md-12" value="חשב">
+
+
+
+                                <input type="submit" onclick="calc()" onclick="addPrice()" onclick="addResualt()"  id="submit" class="col-md-12" value="חשב">
+                                <br>
+                                <br>
+                                <br>
+
+
+
+                                <div>
+                                     <input type="textarea"  id="myAdd" class="col-md-8" value="מה קנית ?"><input onclick="addList()"  type="submit" id="submit" class="col-md-4" value="מה קנית ?">
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div>
+                                    <input onclick="addResualt()"  type="submit" id="submit" class="col-md-12" value="סיים את הרשימה">
+                               </div>
+                                
                            </div>
                         </div>
 
@@ -56,13 +80,12 @@
                            <div class="resualt"  >
                                <p>יתרה
                                <div class="text-center"><img src="money.jpg" width=48px; height=48px; class="rounded" > </div></p>
-                               <input type="textarea" readonly id="resualt" class="form-control ">
+                               <input type="textarea" readonly   id="resualt" class="form-control ">
                                 
                            </div>
                         </div>
                         
                         
-                          
 
 
 
@@ -74,9 +97,43 @@
 
 </div>
 
+<br>
+<br>
+<br>
+<br>
+
+<table class="table table-striped">
+    <caption>רשימת הקניות שלך</caption>.
+    <thead>
+        <tr>
+            <th>מה קנית</th>
+            <th>כמה עלה</th>
+            <th>כמה כסף נשאר לך</th>
+        </tr>   
+    </thead>
+
+    <tbody>
+        <tr >
+            <td id="myUrl"></td>
+            <td id= "myPrice"></td>
+            <td id= "myLast"></td>
+            
+        </tr>
+
+        
+    </tbody>
+</table>
 
 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script src="budget.js"></script>
+<script src="addList.js"></script>
+<script src="addPrice.js"></script>
+<script src="addResualt.js"></script>
+
 
 </body>
 </html>
